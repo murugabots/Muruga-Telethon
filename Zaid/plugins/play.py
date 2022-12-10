@@ -244,7 +244,7 @@ async def vc_end(event, perm):
         except Exception as e:
             await event.reply(f"**ERROR:** `{e}`")
     else:
-        await event.reply("**Ntg is Streaming**")
+        await event.reply("**Y entha song pikalaya 😒😔**")
 
 
 
@@ -459,7 +459,7 @@ async def leavevc(event, perm):
             pass
         await xnxx.edit("**Left the voice chat** `{}`".format(str(event.chat_id)))
     else:
-        await xnxx.edit(f"**Sorry {owner} not on Voice Chat**")
+        await xnxx.edit(f"**Sorry {owner} Assitant Vc la Illa 😒😔**")
 
 
 
@@ -470,7 +470,7 @@ async def vc_skip(event, perm):
     if len(event.text.split()) < 2:
         op = await skip_current_song(chat_id)
         if op == 0:
-            await event.reply("**Nothing Is Streaming**")
+            await event.reply("**Y entha song pikalaya 😒😔**")
         elif op == 1:
             await event.reply("empty queue, leave voice chat", 10)
         else:
@@ -503,7 +503,7 @@ async def vc_pause(event, perm):
         except Exception as e:
             await event.reply(f"**ERROR:** `{e}`")
     else:
-        await event.reply("**Nothing Is Playing**")
+        await event.reply("**sikirama resume pannunga ☺️☺️**")
 
 
 
@@ -518,7 +518,7 @@ async def vc_resume(event, perm):
         except Exception as e:
             await event.reply(f"**ERROR:** `{e}`")
     else:
-        await event.reply("**Nothing Is Streaming**")
+        await event.reply("**▶️ Thank you song play pannathuku 😍😍**")
 
 
 @call_py.on_stream_end()
