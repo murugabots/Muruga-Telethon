@@ -15,3 +15,15 @@ class Config(object):
     ASSISTANT_ID = int(os.environ.get("ASSISTANT_ID", "5373395703")) # telegram I'd not Username
     AUTO_LEAVE_TIME = int(os.environ.get("AUTO_LEAVE_ASSISTANT_TIME", "54000")) # in seconds
     AUTO_LEAVE = os.environ.get('AUTO_LEAVING_ASSISTANT', "True") # Change it to "True" #optional
+    TG_AUDIO_FILESIZE_LIMIT = os.environint(get("TG_AUDIO_FILESIZE_LIMIT", "994857600"))  # Remember to give value in bytes
+    TG_VIDEO_FILESIZE_LIMIT = os.environint(get("TG_VIDEO_FILESIZE_LIMIT", "9973741824"))  # Remember to give value in bytes
+    OWNER_ID = os.environlist(map(int, get("OWNER_ID","1471469091")  # Input type must be interger").split()))  # Input type must be interger
+    DURATION_LIMIT_MIN = os.environ.int(get("DURATION_LIMIT", "900"))  # Remember to give value in Minutes
+    SONG_DOWNLOAD_DURATION = os.environ.int(get("SONG_DOWNLOAD_DURATION_LIMIT", "180"))  # Remember to give value in Minutes
+    
+
+
+
+
+
+    
